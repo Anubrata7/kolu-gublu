@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kolu & Gublu</title>
+    <link rel="icon" href="assets/images/logo-2.png" type="image/png">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Js -->
+    <script src="./assets/js/slick.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body class="bg-[#faf7f2] text-zinc-800 overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-[rgba(255,255,255,0.6)] backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="relative flex gap-2 items-center justify-center mb-4 sm:mb-0">
+                <img src="./assets/images/logo-2.png" alt="" class="h-10 sm:h-[50px] w-auto">
+                <div class="text-center sm:text-left">
+                    <h2 class="text-lg sm:text-2xl font-bold text-pink-600">Forever Yours ♥</h2>
+                    <p class="text-xs sm:text-sm text-gray-500">Anubrata & Bristi ✨💕</p>
+                </div>
+                <img src="./assets/images/logo.png" alt="" class="h-8 sm:h-12 w-auto feather-yxsm">
+                <a href="#" class="absolute left-0 right-0 top-0 bottom-0"></a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="hidden md:flex gap-5 items-center">
+                <nav>
+                    <ul class="flex space-x-6 sm:space-x-8 text-gray-800 font-medium">
+                        <li><a href="#highlights"
+                                class="nav-link pb-1 border-b-2 border-transparent hover:border-pink-500 transition">Story</a>
+                        </li>
+                        <li><a href="#journey"
+                                class="nav-link pb-1 border-b-2 border-transparent hover:border-pink-500 transition">Journey</a>
+                        </li>
+                        <li><a href="#photos"
+                                class="nav-link pb-1 border-b-2 border-transparent hover:border-pink-500 transition">Photo</a>
+                        </li>
+                        <li><a href="#wish"
+                                class="nav-link pb-1 border-b-2 border-transparent hover:border-pink-500 transition">Wish
+                                Us</a></li>
+                    </ul>
+                </nav>
+                <div class="relative">
+                    <img src="./assets/images/logo.png" alt="Logo" class="h-8 sm:h-12 w-auto feather-yxsm">
+                    <a href="#" class="absolute left-0 right-0 top-0 bottom-0"></a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle (hamburger icon - uses your JS) -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="p-2 rounded-md border border-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-700" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden shadow-md">
+            <nav class="px-4 py-4">
+                <ul class="space-y-4 text-gray-800 font-medium text-center">
+                    <li><a href="#highlights" class="nav-link block">Story</a></li>
+                    <li><a href="#journey" class="nav-link block">Journey</a></li>
+                    <li><a href="#photos" class="nav-link block">Photo</a></li>
+                    <li><a href="#wish" class="nav-link block">Wish Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-section feather-bottom">
+        <div class="grid grid-cols-3">
+            <img src="./assets/images/banner-img-3.png" alt=""
+                class="w-full min-h-[70vh] md:h-full md:max-h-[750px] object-cover feather-right" data-aos="fade-right">
+            <img src="./assets/images/banner-img-2.png" alt=""
+                class="w-full min-h-[70vh] md:h-full md:max-h-[750px] object-cover feather-xsm" data-aos="fade-down">
+            <img src="./assets/images/banner-img-1.jpg" alt=""
+                class="w-full min-h-[70vh] md:h-full md:max-h-[750px] object-cover feather-left" data-aos="fade-left">
+        </div>
+    </section>
+
+    <div class="w-full flex justify-center items-center px-6 py-5 ">
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            class="max-w-2xl text-center px-10 py-12 feather-xy bg-contain bg-center bg-no-repeat [background-image:linear-gradient(rgba(250,247,242,0.7),rgba(250,247,242,0.8)),url('./assets/images/leaf-bg.png')]">
+
+            <!-- Heading -->
+            <p class="text-xl font-serif font-semibold text-gray-800 mb-6">
+                SIX YEARS OF LOVE, SIX YEARS OF MAGIC<br>
+                A JOURNEY WHERE EVERY MOMENT WITH YOU<br>
+                FEELS LIKE FOREVER, YET TOO SHORT
+            </p>
+
+            <!-- Body -->
+            <p class="text-gray-700 font-serif text-lg leading-relaxed mb-8">
+                Through laughter, tears, whispers, and endless dreams,<br>
+                our hearts have written a love story only we could create.<br>
+                Today, we celebrate not just six years —<br>
+                but a promise of <span class="italic">“always and forever.”</span>
+            </p>
+
+            <!-- Names -->
+            <p class="text-xl text-rose-500 italic font-semibold">
+                Anubrata & Bristi ✨❤️
+            </p>
+        </div>
+    </div>
+
+    <section id="highlights">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <!-- Title -->
+            <div data-aos="fade-down">
+                <h2 class="text-center text-2xl md:text-4xl font-serif tracking-tight">Our Story</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto mb-2">
+                    A journey of two hearts that found each other, grew together, and chose forever.
+                </p>
+            </div>
+
+            <!-- Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+                <!-- Left -->
+                <div class="text-right md:mb-[120px]" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-pink-600 italic mb-4">Bristi Samadder</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        He is my anchor, strong and unshaken, yet tender when it’s only us.
+                        In his eyes, I see a forever I can trust without fear.
+                        His love doesn’t speak loud - it holds me quietly, endlessly.
+                        With him, the world feels safe, and every tomorrow feels like home.
+                        For me, he isn’t just mine - he is my always, my everything.
+                    </p>
+                    <div class="flex items-center justify-end mt-2 space-x-8 text-2xl">
+                        <a href="#" class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://x.com/BristiSamadder" class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Center Image -->
+                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="flex justify-center">
+                    <img src="assets/images/center-img.png" alt="Us"
+                        class="w-72 h-72 object-cover object-center rounded-full shadow-lg feather-xy">
+                </div>
+
+                <!-- Right -->
+                <div class="text-left md:mt-[120px]" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-pink-600 italic mb-4">Anubrata Deb</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        She is the softness in my storms, the calm in my chaos.
+                        When she smiles, the whole world fades, and only her light remains.
+                        Her love wraps me like a gentle tide, steady yet endlessly deep.
+                        She turns every moment into poetry, every silence into music.
+                        For me, she isn’t just love - she is the reason love exists.
+                    </p>
+                    <div class="flex items-center justify-start mt-2 space-x-8 text-2xl">
+                        <a href="https://www.facebook.com/anubrata.deb.52"
+                            class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/anubratadeb/"
+                            class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://x.com/anubrata_deb" class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Highlights -->
+        <div class="max-w-6xl mx-auto px-4 py-5">
+            <div class="relative mt-3">
+                <div class="slickSlider overflowX-hidden">
+                    <div>
+                        <div class="flex flex-col items-center" data-aos="fade-left">
+                            <button type="button"
+                                class="w-[100px] md:w-[190px] h-20 md:h-40 rounded-xl border-2 border-white overflow-hidden focus:outline-none focus:ring-2 focus:ring-white"
+                                aria-label="Open College story" onclick="openStory(0,0)">
+                                <img src="./assets/images/hightlights/college-bg.png" alt="College"
+                                    class="w-full h-full object-cover">
+                            </button>
+                            <p class="text-basic font-serif text-zinc-600">College</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col items-center" data-aos="fade-left">
+                            <button type="button"
+                                class="w-[100px] md:w-[190px] h-20 md:h-40 rounded-xl border-2 border-white overflow-hidden focus:outline-none focus:ring-2 focus:ring-white"
+                                aria-label="Open Holi story" onclick="openStory(1,0)">
+                                <img src="./assets/images/hightlights/holi-bg.png" alt="Holi"
+                                    class="w-full h-full object-cover">
+                            </button>
+                            <p class="text-basic font-serif text-zinc-600">Holi</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col items-center" data-aos="fade-left">
+                            <button type="button"
+                                class="w-[100px] md:w-[190px] h-20 md:h-40 rounded-xl border-2 border-white overflow-hidden focus:outline-none focus:ring-2 focus:ring-white"
+                                aria-label="Open PandalHopping story" onclick="openStory(2,0)">
+                                <img src="./assets/images/hightlights/pandel-hopping-bg.png" alt="PandalHopping"
+                                    class="w-full h-full object-cover">
+                            </button>
+                            <p class="text-basic font-serif text-zinc-600">Pandal Hopping</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col items-center" data-aos="fade-left">
+                            <button type="button"
+                                class="w-[100px] md:w-[190px] h-20 md:h-40 rounded-xl border-2 border-white overflow-hidden focus:outline-none focus:ring-2 focus:ring-white"
+                                aria-label="Open Park Trails story" onclick="openStory(3,0)">
+                                <img src="./assets/images/hightlights/park-trails-bg.png" alt="Park Trails"
+                                    class="w-full h-full object-cover">
+                            </button>
+                            <p class="text-basic font-serif text-zinc-600">Park Trails</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col items-center" data-aos="fade-left">
+                            <button type="button"
+                                class="w-[100px] md:w-[190px] h-20 md:h-40 rounded-xl border-2 border-white overflow-hidden focus:outline-none focus:ring-2 focus:ring-white"
+                                aria-label="Open Tasty Bites story" onclick="openStory(4,0)">
+                                <img src="./assets/images/hightlights/tasty-bites-bg.png" alt="Tasty Bites"
+                                    class="w-full h-full object-cover">
+                            </button>
+                            <p class="text-basic font-serif text-zinc-600">Tasty Bites</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col items-center" data-aos="fade-left">
+                            <button type="button"
+                                class="w-[100px] md:w-[190px] h-20 md:h-40 rounded-xl border-2 border-white overflow-hidden focus:outline-none focus:ring-2 focus:ring-white"
+                                aria-label="Open Golden Hours story" onclick="openStory(5,0)">
+                                <img src="./assets/images/hightlights/golden-hours-bg.png" alt="Golden Hours"
+                                    class="w-full h-full object-cover">
+                            </button>
+                            <p class="text-basic font-serif text-zinc-600">Golden Hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal (hidden by default) -->
+            <div id="storyModal"
+                class="hidden fixed inset-0 bg-white bg-opacity-95 flex items-center justify-center z-50" role="dialog"
+                aria-modal="true" aria-hidden="true" onclick="if(event.target === this) closeStory()">
+                <div
+                    class="relative w-[320px] h-[530px] flex flex-col bg-[#111827] bg-opacity-4 py-2 rounded-lg overflowY-hidden">
+
+                    <!-- Close -->
+                    <button id="closeBtn" type="button"
+                        class="absolute top-3 right-5 text-3xl text-white cursor-pointer select-none focus:outline-none"
+                        aria-label="Close story" onclick="closeStory()">×</button>
+
+                    <!-- Progress bars -->
+                    <div id="progressBars" class="flex space-x-1 mt-2 px-2"></div>
+
+                    <!-- Header -->
+                    <div id="storyHeader" class="flex items-center space-x-2 p-2">
+                        <img id="headerAvatar" src="./assets/images/bg-img.jpg" alt="profile"
+                            class="w-8 h-8 rounded-full object-cover">
+                        <span id="highlightName" class="font-semibold text-white"></span>
+                    </div>
+
+                    <!-- Video container -->
+                    <div class="relative flex-1 w-full flex items-center justify-center overflow-hidden">
+                        <video id="storyVideo" class="w-full h-full max-h-[60vh] object-contain px-1" playsinline
+                            autoplay></video>
+
+                        <!-- Navigation zones (buttons so they can be focused) -->
+                        <button type="button" id="navLeft"
+                            class="absolute left-0 inset-y-0 w-1/2 z-40  focus:outline-none" aria-label="Previous"
+                            onclick="prevVideo()"></button>
+                        <button type="button" id="navRight"
+                            class="absolute right-0 inset-y-0 w-1/2 z-40  focus:outline-none" aria-label="Next"
+                            onclick="nextVideo()"></button>
+                    </div>
+                    <!-- Arrow Buttons to switch Highlights -->
+                    <span
+                        class="arrow-btn arrow-left absolute top-[50%] left-[-60%] translateY-1/2 text-[40px] cursor-pointer z-100 user-select-none"
+                        onclick="prevHighlight()">❮</span>
+                    <span
+                        class="arrow-btn arrow-right absolute top-[50%] right-[-60%] translateY-1/2 text-[40px] cursor-pointer z-100 user-select-none"
+                        onclick="nextHighlight()">❯</span>
+
+                    <!-- Song info -->
+                    <div id="songInfo"
+                        class="flex items-center w-fit space-x-2 m-2 py-2 px-4 bg-[rgba(255,255,255,0.2)] rounded-lg">
+                        <img id="songThumb" src="./assets/images/bg-img.jpg" alt="song thumb"
+                            class="w-6 h-6 object-cover rounded">
+                        <span id="songText" class="text-sm truncate text-white"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey"
+        class="feather-y overflow-hidden bg-cover bg-center object-fit [background-image:linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)),url('./assets/images/bg-2.png')]">
+        <div class="max-w-6xl mx-auto px-4 pb-24">
+            <div class="max-w-6xl mx-auto px-4 mb-10" data-aos="fade-up">
+                <h2 class="text-center text-2xl md:text-4xl font-serif tracking-tight">Our Journey</h2>
+                <p class="text-center text-zinc-500 mt-2">2019 → 2025 · 6th Anniversary</p>
+            </div>
+
+            <!-- 2019 -->
+            <div class="grid grid-cols-12 gap-8 items-center mb-24">
+                <div class="col-span-12 md:col-span-5 md:order-2 md:text-right" data-aos="fade-left">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2019</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">The First Meeting</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">We met in our Class 11 Biology batch when we were just 16. On
+                        September 9th, we began our journey as a couple.</p>
+                </div>
+                <div class="col-span-12 md:col-span-7 md:order-1" data-aos="fade-right">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy feather-x">
+                        <img src="./assets/images/story-1.jpg" class="w-full h-80 object-cover object-center"
+                            alt="2019" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2020 -->
+            <div class="grid grid-cols-2 gap-8 items-center mb-24">
+                <div class="col-span-2 md:col-span-1" data-aos="fade-right">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2020</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">A Year of Distance</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">COVID-19 kept us apart physically, but our bond only grew
+                        stronger. We stayed connected through every storm.</p>
+                </div>
+                <div class="col-span-2 md:col-span-1" data-aos="fade-left">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy">
+                        <img src="./assets/images/story-2.jpg" class="w-full h-80 object-cover" alt="2020" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="grid grid-cols-12 gap-8 items-center mb-24">
+                <div class="col-span-12 md:col-span-5 md:order-2 md:text-right" data-aos="fade-left">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2021</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">New Beginnings</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">Life returned to normal and we started going to batches
+                        together again. That same year, we began our B.Tech in CSE.</p>
+                </div>
+                <div class="col-span-12 md:col-span-7 md:order-1" data-aos="fade-right">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy feather-x">
+                        <img src="./assets/images/story-7.jpg" class="w-full h-80 object-cover object-center"
+                            alt="2021" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2022 -->
+            <div class="grid grid-cols-2 gap-8 items-center mb-24">
+                <div class="col-span-2 md:col-span-1" data-aos="fade-right">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2022</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">Growing Together</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">Between lectures, late-night calls, and endless laughter, we
+                        kept each other motivated. Our friendship deepened with love.</p>
+                </div>
+                <div class="col-span-2 md:col-span-1" data-aos="fade-left">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy">
+                        <img src="./assets/images/story-5.jpg" class="w-full h-80 object-cover" alt="2022" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2023 -->
+            <div class="grid grid-cols-12 gap-8 items-center mb-24">
+                <div class="col-span-12 md:col-span-5 md:order-2 md:text-right" data-aos="fade-left">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2023</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">Through Ups and Downs</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">Like every journey, ours had challenges. But every low brought
+                        us even closer and stronger.</p>
+                </div>
+                <div class="col-span-12 md:col-span-7 md:order-1" data-aos="fade-right">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy feather-x">
+                        <img src="./assets/images/story-8.jpg" class="w-full h-80 object-cover object-center"
+                            alt="2023" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="grid grid-cols-2 gap-8 items-center mb-24">
+                <div class="col-span-2 md:col-span-1" data-aos="fade-right">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2024</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">Closer Than Ever</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">Our bond matured into something truly unshakable. We
+                        celebrated small wins and stood together through setbacks.</p>
+                </div>
+                <div class="col-span-2 md:col-span-1" data-aos="fade-left">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy">
+                        <img src="./assets/images/story-3.jpg" class="w-full h-80 object-cover" alt="2024" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2025 -->
+            <div class="grid grid-cols-12 gap-8 items-center mb-24">
+                <div class="col-span-12 md:col-span-5 md:order-2 md:text-right" data-aos="fade-left">
+                    <h2 class="font-semibold tracking-wide text-xs text-zinc-500">2025</h2>
+                    <h3 class="text-2xl md:text-3xl font-serif">6 Years of Us</h3>
+                    <p class="mt-2 text-zinc-600 text-sm">From shy teenagers to stronger partners, our love has stood
+                        the test of time. This is just the beginning of our forever.</p>
+                </div>
+                <div class="col-span-12 md:col-span-7 md:order-1" data-aos="fade-right">
+                    <div class="rounded-xl overflow-hidden shadow-sm feather-xy feather-x">
+                        <img src="./assets/images/story-4.jpg" class="w-full h-80 object-cover object-center"
+                            alt="2025" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" class="py-10" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap gap-4 justify-center mb-8">
+                <button class="filter-btn bg-pink-600 text-white px-4 py-2 rounded font-semibold"
+                    data-filter="*">All</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2025">2025</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2024">2024</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2023">2023</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2022">2022</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2021">2021</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2020">2020</button>
+                <button class="filter-btn bg-pink-100 px-4 text-pink-400 py-2 rounded font-semibold"
+                    data-filter=".year-2019">2019</button>
+            </div>
+
+            <!-- Gallery Wrapper -->
+            <div id="gallery-wrapper" class="relative">
+                <!-- Gallery container -->
+                <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gallery">
+
+<!-- ================= Year 2025 ================= -->
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (1).jpg"><img src="assets/images/2025/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (2).png"><img src="assets/images/2025/1 (2).png"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (3).png"><img src="assets/images/2025/1 (3).png"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (4).jpg"><img src="assets/images/2025/1 (4).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (1).jpg"><img src="assets/images/2024/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (2).jpg"><img src="assets/images/2024/1 (2).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (3).jpg"><img src="assets/images/2024/1 (3).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (4).jpg"><img src="assets/images/2024/1 (4).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (5).png"><img src="assets/images/2025/1 (5).png"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (6).jpg"><img src="assets/images/2025/1 (6).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (7).jpg"><img src="assets/images/2025/1 (7).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (8).jpg"><img src="assets/images/2025/1 (8).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (9).jpg"><img src="assets/images/2025/1 (9).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (10).jpg"><img src="assets/images/2025/1 (10).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (11).jpg"><img src="assets/images/2025/1 (11).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (12).jpg"><img src="assets/images/2025/1 (12).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (13).jpg"><img src="assets/images/2025/1 (13).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (14).jpg"><img src="assets/images/2025/1 (14).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (15).jpg"><img src="assets/images/2025/1 (15).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (16).jpg"><img src="assets/images/2025/1 (16).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (17).jpg"><img src="assets/images/2025/1 (17).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (18).jpg"><img src="assets/images/2025/1 (18).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2025">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2025/1 (19).jpg"><img src="assets/images/2025/1 (19).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+                    <!-- ================= Year 2024 ================= -->
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (5).jpg"><img src="assets/images/2024/1 (5).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (6).jpg"><img src="assets/images/2024/1 (6).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (7).jpg"><img src="assets/images/2024/1 (7).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (8).jpg"><img src="assets/images/2024/1 (8).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (9).jpg"><img src="assets/images/2024/1 (9).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (10).jpg"><img src="assets/images/2024/1 (10).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (11).jpg"><img src="assets/images/2024/1 (11).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (12).jpg"><img src="assets/images/2024/1 (12).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (13).jpg"><img src="assets/images/2024/1 (13).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (14).jpg"><img src="assets/images/2024/1 (14).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (15).jpg"><img src="assets/images/2024/1 (15).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (16).jpg"><img src="assets/images/2024/1 (16).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (17).jpg"><img src="assets/images/2024/1 (17).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (18).jpg"><img src="assets/images/2024/1 (18).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (19).jpg"><img src="assets/images/2024/1 (19).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (20).jpg"><img src="assets/images/2024/1 (20).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (21).jpg"><img src="assets/images/2024/1 (21).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (22).jpg"><img src="assets/images/2024/1 (22).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (23).jpg"><img src="assets/images/2024/1 (23).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (24).jpg"><img src="assets/images/2024/1 (24).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (25).jpg"><img src="assets/images/2024/1 (25).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (26).jpg"><img src="assets/images/2024/1 (26).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (27).jpg"><img src="assets/images/2024/1 (27).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (28).jpg"><img src="assets/images/2024/1 (28).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (29).jpg"><img src="assets/images/2024/1 (29).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (30).jpg"><img src="assets/images/2024/1 (30).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (31).jpg"><img src="assets/images/2024/1 (31).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (32).jpg"><img src="assets/images/2024/1 (32).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (33).jpg"><img src="assets/images/2024/1 (33).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (34).jpg"><img src="assets/images/2024/1 (34).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (35).jpg"><img src="assets/images/2024/1 (35).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (36).jpg"><img src="assets/images/2024/1 (36).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (37).jpg"><img src="assets/images/2024/1 (37).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (38).jpg"><img src="assets/images/2024/1 (38).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (39).jpg"><img src="assets/images/2024/1 (39).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (40).jpg"><img src="assets/images/2024/1 (40).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (41).jpg"><img src="assets/images/2024/1 (41).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (42).jpg"><img src="assets/images/2024/1 (42).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (43).jpg"><img src="assets/images/2024/1 (43).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (44).jpg"><img src="assets/images/2024/1 (44).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (45).jpg"><img src="assets/images/2024/1 (45).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (46).jpg"><img src="assets/images/2024/1 (46).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (47).jpg"><img src="assets/images/2024/1 (47).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (48).jpg"><img src="assets/images/2024/1 (48).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (49).jpg"><img src="assets/images/2024/1 (49).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (50).jpg"><img src="assets/images/2024/1 (50).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (51).jpg"><img src="assets/images/2024/1 (51).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (52).jpg"><img src="assets/images/2024/1 (52).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (53).jpg"><img src="assets/images/2024/1 (53).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (54).jpg"><img src="assets/images/2024/1 (54).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (55).jpg"><img src="assets/images/2024/1 (55).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (56).jpg"><img src="assets/images/2024/1 (56).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (57).jpg"><img src="assets/images/2024/1 (57).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (58).jpg"><img src="assets/images/2024/1 (58).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2024">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2024/1 (59).jpg"><img src="assets/images/2024/1 (59).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+                    <!-- ================= Year 2023 ================= -->
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (1).jpg"><img src="assets/images/2023/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (2).jpg"><img src="assets/images/2023/1 (2).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (3).jpg"><img src="assets/images/2023/1 (3).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (4).jpg"><img src="assets/images/2023/1 (4).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (5).jpg"><img src="assets/images/2023/1 (5).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (6).jpg"><img src="assets/images/2023/1 (6).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (7).jpg"><img src="assets/images/2023/1 (7).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (8).jpg"><img src="assets/images/2023/1 (8).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (9).jpg"><img src="assets/images/2023/1 (9).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (10).jpg"><img src="assets/images/2023/1 (10).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (11).jpg"><img src="assets/images/2023/1 (11).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (12).jpg"><img src="assets/images/2023/1 (12).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (13).jpg"><img src="assets/images/2023/1 (13).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (14).jpg"><img src="assets/images/2023/1 (14).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (15).jpg"><img src="assets/images/2023/1 (15).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (16).jpg"><img src="assets/images/2023/1 (16).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (17).jpg"><img src="assets/images/2023/1 (17).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (18).jpg"><img src="assets/images/2023/1 (18).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (19).jpg"><img src="assets/images/2023/1 (19).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (20).jpg"><img src="assets/images/2023/1 (20).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (21).jpg"><img src="assets/images/2023/1 (21).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (22).jpg"><img src="assets/images/2023/1 (22).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (23).jpg"><img src="assets/images/2023/1 (23).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (24).jpg"><img src="assets/images/2023/1 (24).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (25).jpg"><img src="assets/images/2023/1 (25).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (26).jpg"><img src="assets/images/2023/1 (26).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (27).jpg"><img src="assets/images/2023/1 (27).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (28).jpg"><img src="assets/images/2023/1 (28).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2023">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2023/1 (29).jpg"><img src="assets/images/2023/1 (29).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+                    <!-- ================= Year 2022 ================= -->
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (1).jpg"><img src="assets/images/2022/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (2).jpg"><img src="assets/images/2022/1 (2).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (3).jpg"><img src="assets/images/2022/1 (3).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (4).jpg"><img src="assets/images/2022/1 (4).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (5).jpg"><img src="assets/images/2022/1 (5).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (6).jpg"><img src="assets/images/2022/1 (6).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (7).jpg"><img src="assets/images/2022/1 (7).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (8).jpg"><img src="assets/images/2022/1 (8).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (9).jpg"><img src="assets/images/2022/1 (9).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (10).jpg"><img src="assets/images/2022/1 (10).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (11).jpg"><img src="assets/images/2022/1 (11).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (12).jpg"><img src="assets/images/2022/1 (12).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (13).jpg"><img src="assets/images/2022/1 (13).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (14).jpg"><img src="assets/images/2022/1 (14).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (15).jpg"><img src="assets/images/2022/1 (15).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (16).jpg"><img src="assets/images/2022/1 (16).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (17).jpg"><img src="assets/images/2022/1 (17).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (18).jpg"><img src="assets/images/2022/1 (18).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (19).jpg"><img src="assets/images/2022/1 (19).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (20).jpg"><img src="assets/images/2022/1 (20).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (21).jpg"><img src="assets/images/2022/1 (21).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (22).jpg"><img src="assets/images/2022/1 (22).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (23).jpg"><img src="assets/images/2022/1 (23).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (24).jpg"><img src="assets/images/2022/1 (24).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (25).jpg"><img src="assets/images/2022/1 (25).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (26).jpg"><img src="assets/images/2022/1 (26).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (27).jpg"><img src="assets/images/2022/1 (27).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (28).jpg"><img src="assets/images/2022/1 (28).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (29).jpg"><img src="assets/images/2022/1 (29).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (30).jpg"><img src="assets/images/2022/1 (30).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (31).jpg"><img src="assets/images/2022/1 (31).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (32).jpg"><img src="assets/images/2022/1 (32).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (33).jpg"><img src="assets/images/2022/1 (33).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (34).jpg"><img src="assets/images/2022/1 (34).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (35).jpg"><img src="assets/images/2022/1 (35).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (36).jpg"><img src="assets/images/2022/1 (36).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (37).jpg"><img src="assets/images/2022/1 (37).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2022">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2022/1 (38).jpg"><img src="assets/images/2022/1 (38).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+                    <!-- ================= Year 2021 ================= -->
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (1).jpg"><img src="assets/images/2021/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (2).jpg"><img src="assets/images/2021/1 (2).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (3).jpg"><img src="assets/images/2021/1 (3).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (4).jpg"><img src="assets/images/2021/1 (4).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (5).jpg"><img src="assets/images/2021/1 (5).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (6).jpg"><img src="assets/images/2021/1 (6).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (7).jpg"><img src="assets/images/2021/1 (7).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (8).jpg"><img src="assets/images/2021/1 (8).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (9).jpg"><img src="assets/images/2021/1 (9).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (10).jpg"><img src="assets/images/2021/1 (10).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2021">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2021/1 (11).jpg"><img src="assets/images/2021/1 (11).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+                    <!-- ================= Year 2020 ================= -->
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (1).jpg"><img src="assets/images/2020/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (2).jpg"><img src="assets/images/2020/1 (2).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (3).jpg"><img src="assets/images/2020/1 (3).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (4).jpg"><img src="assets/images/2020/1 (4).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (5).jpg"><img src="assets/images/2020/1 (5).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (6).jpg"><img src="assets/images/2020/1 (6).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (7).jpg"><img src="assets/images/2020/1 (7).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (8).jpg"><img src="assets/images/2020/1 (8).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (9).jpg"><img src="assets/images/2020/1 (9).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (10).jpg"><img src="assets/images/2020/1 (10).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (11).jpg"><img src="assets/images/2020/1 (11).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (12).jpg"><img src="assets/images/2020/1 (12).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (13).jpg"><img src="assets/images/2020/1 (13).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+                    <div class="gallery-item year-2020">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2020/1 (14).jpg"><img src="assets/images/2020/1 (14).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+
+                    <!-- ================= Year 2019 ================= -->
+                    <div class="gallery-item year-2019">
+                        <div class="bg-gray-700/70 overflow-hidden rounded-lg shadow-md"><a
+                                href="assets/images/2019/1 (1).jpg"><img src="assets/images/2019/1 (1).jpg"
+                                    class="w-full h-64 object-contain"></a></div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev-btn"
+                    class="absolute top-[50%] left-0 z-[1] -translateY-1/2 bg-gray-700 py-1 px-2 flex items-center justify-center text-white rounded-lg opacity-0.9 hidden"><i
+                        class="bi bi-chevron-left"></i></button>
+                <button id="next-btn"
+                    class="absolute top-[50%] right-0 z-[1] -translateY-1/2 bg-gray-700 py-1 px-2 flex items-center justify-center text-white rounded-lg opacity-0.9"><i
+                        class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="wish" class="feather-y relative py-16 bg-gradient-to-b from-pink-50 via-white to-pink-100">
+        <!-- Decorative background hearts -->
+        <div class="absolute top-10 left-10 text-pink-300 text-5xl opacity-30">💕</div>
+        <div class="absolute bottom-10 right-10 text-pink-300 text-5xl opacity-30">💖</div>
+
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <div class="text-2xl italic text-pink-600">Save The Date</div>
+            <div class="text-4xl font-bold mt-2 text-gray-800 tracking-wide" id="anniversary-date">09 Sep 2025</div>
+            <p class="text-base text-gray-500 mt-2">Our Anniversary 💕</p>
+        </div>
+
+        <!-- Countdown Container -->
+        <div id="countdown-container" class="flex gap-3 md:gap-6 flex-wrap justify-center mb-4">
+            <div
+                class="circle bg-white shadow-md rounded-full w-20 md:w-28 h-20 md:h-28 flex flex-col justify-center items-center">
+                <span class="text-3xl font-extrabold text-pink-600" id="days">0</span>
+                <span class="text-xs text-gray-500">Days</span>
+            </div>
+            <div
+                class="circle bg-white shadow-md rounded-full w-20 md:w-28 h-20 md:h-28 flex flex-col justify-center items-center">
+                <span class="text-3xl font-extrabold text-pink-600" id="hours">0</span>
+                <span class="text-xs text-gray-500">Hours</span>
+            </div>
+            <div
+                class="circle bg-white shadow-md rounded-full w-20 md:w-28 h-20 md:h-28 flex flex-col justify-center items-center">
+                <span class="text-3xl font-extrabold text-pink-600" id="minutes">0</span>
+                <span class="text-xs text-gray-500">Mins</span>
+            </div>
+            <div
+                class="circle bg-white shadow-md rounded-full w-20 md:w-28 h-20 md:h-28 flex flex-col justify-center items-center">
+                <span class="text-3xl font-extrabold text-pink-600" id="seconds">0</span>
+                <span class="text-xs text-gray-500">Secs</span>
+            </div>
+        </div>
+
+        <!-- Happy Anniversary Message -->
+        <div id="anniversary-message" class="hidden mx-5">
+            <div class="p-6 max-w-2xl mx-auto ">
+                <h2 class="text-2xl font-bold mb-4 text-center text-pink-700">💌 Send Us a Wish</h2>
+
+                <form id="wishForm" action="https://api.web3forms.com/submit" method="POST"
+                    class="flex flex-col sm:flex-row gap-3 items-center">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="f81a426b-3b7a-4741-be39-9e402f10fb13">
+
+                    <div class="flex border border-pink-200 rounded-full overflow-hidden w-full">
+                        <input type="text" name="name" placeholder="Your name" required
+                            class="w-[110px] md:w-[170px] px-4 py-2 text-sm bg-white border border-r-2 focus:outline-none focus:ring-2 focus:ring-pink-400">
+
+                        <input name="message" placeholder="Your message" required
+                            class="w-full px-4 py-2 text-sm bg-white  focus:outline-none focus:ring-2 focus:ring-pink-400">
+
+                    </div>
+                    <button type="submit"
+                        class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-medium shadow-md transition">
+                        Send
+                    </button>
+                </form>
+
+                <!-- Thank You Message -->
+                <div id="thankYou" class="hidden text-center mt-4 text-green-600 font-semibold">
+                    ✅ Thank you for wishing us!
+                </div>
+            </div>
+        </div>
+
+        <!-- Time Since Start -->
+        <div class="justify-center items-center mt-4 flex gap-2">
+            <h2 class="text-xl font-bold text-pink-400">Forever & Counting……</h2>
+            <p id="since-time" class="text-lg text-pink-700 "></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-pink-50 text-gray-700">
+        <div class="max-w-6xl mx-auto px-6 py-10">
+
+            <!-- Top Section -->
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+
+                <!-- Logo / Names -->
+                <div class="relative flex gap-2 items-center justify-center mb-6 md:mb-0 ">
+                    <img src="./assets/images/logo-2.png" alt="" class="h-[60px] w-auto">
+                    <div class=" text-center md:text-left">
+                        <h2 class="text-2xl font-bold text-pink-600">Forever Yours ♥</h2>
+                        <p class="text-sm text-gray-500">Anubrata & Bristi ✨💕</p>
+                    </div>
+                    <img src="./assets/images/logo.png" alt="" class="h-12 w-auto feather-yxsm">
+                    <a href="#" class="absolute left-0 right-0 top-0 bottom-0"></a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="flex items-center space-x-6 mb-6 md:mb-0 h-12">
+                    <a href="#highlights" class="hover:text-pink-600 font-semibold transition">Story</a>
+                    <a href="#journey" class="hover:text-pink-600 font-semibold transition">Journey</a>
+                    <a href="#photos" class="hover:text-pink-600 font-semibold transition">Photos</a>
+                    <a href="#wish" class="hover:text-pink-600 font-semibold transition">Wish Us</a>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex items-center h-12 space-x-4 text-2xl">
+                    <a href="#" class="text-pink-600 hover:text-pink-800 transition">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="text-pink-600 hover:text-pink-800 transition">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="text-pink-600 hover:text-pink-800 transition">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-300 my-6"></div>
+
+            <!-- Bottom Section -->
+            <div class="text-center text-sm text-gray-500">
+                <p>© 2025 Forever Yours. Made with ❤️ by Anubrata & Bristi</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

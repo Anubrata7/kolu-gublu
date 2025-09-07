@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>6th Anniversary Celebration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            color: rgba(255, 105, 180, 0.5);
+            font-size: 24px;
+            animation: floatUp 6s linear infinite;
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-500px) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        /* Candle Flame Flicker */
+        .flame {
+            animation: flicker 0.2s infinite alternate;
+            transform-origin: center bottom;
+        }
+
+        @keyframes flicker {
+            from {
+                transform: scale(1) rotate(-2deg);
+                opacity: 0.9;
+            }
+
+            to {
+                transform: scale(1.05) rotate(2deg);
+                opacity: 1;
+            }
+        }
+
+        /* Smoke */
+        .smoke {
+            position: absolute;
+            /* bottom: 40px; */
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            width: 10px;
+            height: 10px;
+            background: rgba(200, 200, 200, 0.6);
+            border-radius: 50%;
+            animation: rise 2s forwards;
+        }
+        @keyframes rise {
+            from {
+                transform: translateY(0) scale(1);
+                opacity: 0.8;
+            }
+
+            to {
+                transform: translateY(-150px) scale(2);
+                opacity: 0;
+            }
+        }
+
+        /* Knife Cursor */
+        .knife-cursor {
+            cursor: url("assets/images/knife-cursor-64.svg") 8 12, auto;
+        }
+
+        /* Slash Effect */
+        .slash {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: white;
+            box-shadow: 0 0 8px white;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            opacity: 0;
+            animation: slashAnim 0.6s forwards;
+        }
+
+        @keyframes slashAnim {
+            0% {
+                width: 0;
+                opacity: 1;
+            }
+
+            100% {
+                width: 200px;
+                opacity: 0;
+            }
+        }
+
+        /* Confetti */
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: red;
+            animation: fall 3s linear forwards;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(0) rotate(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(500px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Final Bouquet Overlay */
+        #bouquet-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            pointer-events: none;
+        }
+
+        #bouquet-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .feather-xy {
+            -webkit-mask-image:
+                linear-gradient(to bottom, transparent 0, black 30px, black calc(100% - 30px), transparent 100%),
+                linear-gradient(to right, transparent 0, black 30px, black calc(100% - 30px), transparent 100%);
+            -webkit-mask-composite: destination-in;
+            mask-image:
+                linear-gradient(to bottom, transparent 0, black 30px, black calc(100% - 30px), transparent 100%),
+                linear-gradient(to right, transparent 0, black 30px, black calc(100% - 30px), transparent 100%);
+            mask-composite: intersect;
+        }
+    </style>
+    <script src="./assets/js/celebration.js" defer></script>
+</head>
+
+<body
+    class="flex items-center justify-center overflow-hidden min-h-screen bg-cover bg-center object-fit [background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.9)),url('./assets/images/bg-cake.jpg')]">
+    <!-- OTP Modal -->
+    <div id="otpModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-[100]">
+        <div data-aos="zoom-in" class="bg-white p-6 rounded-2xl shadow-lg w-80 text-center">
+            <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold">Enter our code 🤫</h2>
+            <a href="./forever.html" class="text-white bg-pink-500 hover:bg-pink-600 p-1 px-2 rounded-lg">X</a>
+            </div>
+            <input type="password" id="otpInput" maxlength="6"
+                class="border rounded-lg px-3 py-2 w-full text-center mb-4 focus:outline-none focus:ring-2 focus:ring-pink-400"
+                placeholder="___  ___  ___  ___">
+            <div class="flex justify-center gap-4">
+                <button id="submitOtp" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">
+                    Submit
+                </button>
+            </div>
+            <p id="otpError" class="text-red-500 mt-2 hidden">❌ Wrong code! Redirecting...</p>
+        </div>
+    </div>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen"
+        class="blur-md pointer-events-none fixed inset-0 flex flex-col items-center justify-center z-50 text-center overflow-hidden min-h-screen bg-cover bg-center [background-image:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.9)),url('./assets/images/our-photo-bg.png')]">
+        <h1 class="text-3xl font-bold text-pink-700 mb-4">Happy 6th Anniversary ❤️</h1>
+        <p class="mb-2">"Celebrating six years of love, laughter, and togetherness <br /> A journey that began in 2019
+            and grows stronger every day.” ✨</p>
+        <img src="./assets/images/our-photo.png" alt="Couple Photo"
+            class="feather-xy h-64 w-64 mb-5 object-fit object-center object-cover">
+
+    <button id="start-btn"
+      class="text-[18px] bg-transparent text-pink-700 font-medium rounded-2xl hover:text-pink-700 active:scale-95 transition">
+            Let’s Celebrate Together 🎉
+    </button>
+    </div>
+
+    <!-- Floating Hearts Container -->
+    <div id="hearts"></div>
+
+    <div id="container" class="text-center relative z-10">
+        <div class="flex items-center justify-center gap-20">
+            <!-- Candle -->
+            <div id="candle-area" class="relative flex flex-col items-center">
+                <img id="candle" src="./assets/images/candle.png" alt="Candle" class="w-24 mb-2 transition duration-700">
+                <img id="flame" src="./assets/images/flame.png" alt="Flame"
+                    class="w-10 absolute top-0 hidden flame transition duration-700">
+            </div>
+
+            <!-- Cake -->
+            <div id="cake-area" class="relative mt-6 hidden">
+                <img id="cake" src="./assets/images/cake-1.png" alt="Cake" class="w-52 mx-auto transition duration-1000 ease-in-out">
+                <img id="cake-cut" src="./assets/images/cake-2.png" alt="Cut Cake"
+                    class="w-52 mx-auto hidden transition duration-1000 ease-in-out">
+                <div id="slash" class="slash hidden"></div>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <p id="message" class="mt-6 text-xl font-semibold text-pink-700 transition duration-700"></p>
+    </div>
+
+    <!-- Bouquet Overlay -->
+    <div id="bouquet-overlay" class="flex flex-col gap-5 items-center justify-center">
+        <img src="./assets/images/us.png" alt="" class="w-64 drop-shadow-2xl feather-xy">
+        <h3 class="text-xl font-bold text-pink-700">Love you gublu ❤️</h3>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="./assets/audio/humdard.m4a" loop muted></audio>
+</body>
+
+</html>
