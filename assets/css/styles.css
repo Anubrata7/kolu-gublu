@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fancybox__slide, .fancybox__thumbs {
+    /* background-color: rgba(255, 255, 255, 0.6) !important; */
+    background-color: #727881 !important;
+}
+
+.gallery {
+    margin: -12px;
+}
+
+.gallery-item {
+    width: 25%;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .gallery-item {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+.feather-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.feather-top {
+    -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%);
+    mask-image: linear-gradient(to top, black 80%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.feather-left {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 40px);
+    mask-image: linear-gradient(to right, transparent 0, black 40px);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.feather-right {
+    -webkit-mask-image: linear-gradient(to left, transparent 0, black 40px);
+    mask-image: linear-gradient(to left, transparent 0, black 40px);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+
+.feather-y {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 10px, black calc(100% - 10px), transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, black 10px, black calc(100% - 10px), transparent 100%);
+}
+
+.feather-yxsm {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 3px, black calc(100% - 3px), transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0, black 3px, black calc(100% - 3px), transparent 100%);
+}
+
+.feather-x {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 60px, black calc(100% - 60px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, black 60px, black calc(100% - 60px), transparent 100%);
+}
+
+.feather-xsm {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 30px, black calc(100% - 30px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, black 30px, black calc(100% - 30px), transparent 100%);
+}
+
+.feather-xy {
+    -webkit-mask-image:
+        linear-gradient(to bottom, transparent 0, black 30px, black calc(100% - 30px), transparent 100%),
+        linear-gradient(to right, transparent 0, black 30px, black calc(100% - 30px), transparent 100%);
+    -webkit-mask-composite: destination-in;
+    mask-image:
+        linear-gradient(to bottom, transparent 0, black 30px, black calc(100% - 30px), transparent 100%),
+        linear-gradient(to right, transparent 0, black 30px, black calc(100% - 30px), transparent 100%);
+    mask-composite: intersect;
+}
